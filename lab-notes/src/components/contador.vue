@@ -3,19 +3,23 @@
     <h1>{{counter}}</h1>
    <!--  si quiero enlazarlo con la data (counter) del script, pues
     lo llamo con las dobles llaves "{{}}" -->
+    <SumaTotal :total="suma"/>
     <button @click="suma">+</button>
     <!-- para llamar a los eventos se recurre al "@" -->
-    <button @click="resta">-</button>
+    <button @click="resta">-</button>    
   </div>
 </template>
 
 <script>
-// import {  } from ''
+import {suma } from './sumaTotal.vue'
 
 export default {
+  components:{
+    'SumaTotal': suma
+  },
   data() {
     return {
-      counter:0
+      counter:5
     }
   },
   methods:{
