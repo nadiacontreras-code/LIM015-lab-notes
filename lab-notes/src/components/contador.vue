@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { suma } from './SumaTotal.vue'
+import { suma } from './sumaTotal.vue'
 
 export default {
   components: {
