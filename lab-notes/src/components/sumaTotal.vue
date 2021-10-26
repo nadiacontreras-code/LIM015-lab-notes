@@ -7,11 +7,11 @@
 
 <script>
 export default {
- data(){
-  return{
-    total:0
+  data () {
+    return {
+      total: 0
+    }
   }
-}
 }
 </script>
 

@@ -1,35 +1,35 @@
 <template>
   <div>
-    <h1>{{counter}}</h1>
-   <!--  si quiero enlazarlo con la data (counter) del script, pues
+    <h1>{{ counter }}</h1>
+    <!--  si quiero enlazarlo con la data (counter) del script, pues
     lo llamo con las dobles llaves "{{}}" -->
-    <SumaTotal :total="suma"/>
+    <SumaTotal :total="suma" />
     <button @click="suma">+</button>
     <!-- para llamar a los eventos se recurre al "@" -->
-    <button @click="resta">-</button>    
+    <button @click="resta">-</button>
   </div>
 </template>
 
 <script>
-import {suma } from './sumaTotal.vue'
+import { suma } from './SumaTotal.vue'
 
 export default {
-  components:{
+  components: {
     'SumaTotal': suma
   },
-  data() {
+  data () {
     return {
-      counter:5
+      counter: 5
     }
   },
-  methods:{
-    //funciones para la data
-    suma(){ //1era funcion como objeto
+  methods: {
+    // funciones para la data
+    suma () { // 1era funcion como objeto
       this.counter++
-      /*"this" te trae cualquier elemento que este dentro dentro de
+      /* "this" te trae cualquier elemento que este dentro dentro de
       data o de methods */
     },
-    resta(){
+    resta () {
       this.counter--
     }
 
