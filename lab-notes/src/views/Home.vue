@@ -1,10 +1,12 @@
 <template>
   <div class="home">
+    <div class="logo">
     <img
-      alt="Vue logo"
-      src="../assets/logo.png"
+      alt="Note logo"
+      src="../assets/noteLogo.png"
     >
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <HelloWorld msg="Welcome to My Notes" />
+    </div>
   </div>
 </template>
 
@@ -19,3 +21,16 @@ export default {
   }
 }
 </script>
+<style scoped>
+.home{
+  padding: 100px;
+}
+img{
+  width:200px;
+  height:200px;
+}
+.logo{
+  text-align: center;
+}
+
+</style>
