@@ -1,12 +1,15 @@
 <template>
-  <div class="register">
-    <h1>Registrate</h1>
+  <div class="registerForm">
+    <h1>¡Registrate!</h1>
+    <RegisterForm />
   </div>
 </template>
 
 <script>
+import RegisterForm from '@/components/RegisterForm.vue'
 export default {
-
+name: 'Register',
+components: {RegisterForm},
 }
 </script>
 

@@ -29,7 +29,7 @@ export default {
 </script>
 <style scoped>
 .home{
-  padding: 100px;
+  padding: 10px;
   *background-color: red;
 }
 img{
